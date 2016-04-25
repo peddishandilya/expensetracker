@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+<LinearLayout
+	android:orientation = "vertical"
+	android:layout_width = "fill_parent"
+	android:layout_height = "fill_parent">
+	<TextView
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content"
+		android:textSize = "28px"
+		android:text = "Category Manager"/>
+	<TableLayout
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_gravity = "center_horizontal"
+		android:layout_marginTop = "10dip">
+<!-- TOGGLE BUTTONS -->
+	<TableRow
+		android:layout_width = "fill_parent"
+		android:layout_height = "45dip">
+		<LinearLayout
+			android:orientation = "horizontal"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_gravity = "center_horizontal">
+			<Button
+				android:id = "@+id/new_cat"
+				android:layout_width = "125dip"
+				android:layout_height = "45dip"
+				android:text = "New Category"/>
+			<Button
+				android:id = "@+id/edit_cat"
+				android:layout_width = "125dip"
+				android:layout_height = "45dip"
+				android:text = "Edit Existing"/>
+		</LinearLayout>	
+	</TableRow>
+<!-- CATEGORY SPINNER -->
+	<TableRow
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent">
+		<Spinner 
+			android:id = "@+id/cat_spinner"
+			android:layout_width = "fill_parent"
+			android:layout_height = "50dip"
+			android:prompt = "@string/catmgr_prompt"
+			android:layout_marginTop = "10dip"
+			android:layout_marginBottom = "5dip"
+			android:drawSelectorOnTop="true"/>
+	</TableRow>
+<!-- CATEGORY NAME -->
+		<TableRow
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:layout_marginTop = "10dip">
+			<TextView
+				android:id = "@+id/tv_catname"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:text = "Category Name"
+				android:textSize = "24px"/>
+		</TableRow>
+		<TableRow
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent">
+			<EditText
+				android:id = "@+id/cat_name"
+				android:layout_width = "310dip"
+				android:layout_height = "fill_parent"
+				android:textSize = "18px"/>
+		</TableRow>
+<!-- CATEGORY TYPE -->
+		<TableRow
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:layout_marginTop = "10dip">
+			<TextView
+				android:id = "@+id/tv_cattype"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:text = "Category Type"
+				android:textSize = "24px"/>
+		</TableRow>
+		<TableRow
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent">
+			<Spinner
+				android:id = "@+id/cat_type"
+				android:layout_width = "fill_parent"
+				android:layout_height = "50dip"
+				android:textSize = "18px"
+				android:prompt = "@string/catmgr_type_prompt"
+				android:drawSelectorOnTop = "true"/>
+		</TableRow>
+<!-- ACTIVE BOX and SAVE -->
+		<TableRow
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:layout_marginTop = "15dip">
+			<LinearLayout
+				android:orientation = "horizontal"
+				android:layout_width = "fill_parent"
+				android:layout_height = "wrap_content">
+				<TextView
+					android:id = "@+id/tv_catactive"
+					android:layout_width = "90dip"
+					android:layout_height = "wrap_content"
+					android:text = "Active?"
+					android:textSize = "24px"/>
+				<CheckBox
+					android:id = "@+id/active_cat"
+					android:layout_width = "50dip"
+					android:layout_height = "50dip"
+					android:checked = "true"/>
+				<Button
+					android:id = "@+id/save_cat"
+					android:layout_width = "150dip"
+					android:layout_height = "70dip"
+					android:layout_marginLeft = "20dip"
+					android:text = "Save"
+					android:textSize = "30px"/>
+			</LinearLayout>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>
+</ScrollView>

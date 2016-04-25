@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+ 	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5px"
+		android:layout_marginBottom="5px"
+		android:text="Your MintTrack Stats"
+		android:textSize="20dip"
+		android:gravity="center"
+		android:textStyle="bold"/>
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbars="none">
+	<LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+<!-- TRANSACTIONS -->
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="5px"
+		android:paddingTop="5px">
+		<TextView
+  		 	android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="Total Transactions:"
+  			android:textStyle="bold"
+  			android:textSize="18dip"
+  			android:layout_marginBottom="10px"
+  			android:layout_marginLeft="5px"/>
+  		<TextView
+  			android:layout_width="50dip"
+  			android:layout_height="wrap_content"
+  			android:id="@+id/NUMTRANS"
+  			android:textSize="18dip"
+  			android:layout_marginLeft="21px"/>
+		<ImageView
+			android:layout_width="30dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/BRONZESTAR"
+			android:src="@drawable/bronze_star"
+			android:layout_marginLeft="20px"/>
+		<ImageView
+			android:layout_width="30dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/SILVERSTAR"
+			android:src="@drawable/silver_star"
+			android:layout_marginLeft="20px"/>
+		<ImageView
+			android:layout_width="30dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/GOLDSTAR"
+			android:src="@drawable/gold_star"
+			android:layout_marginLeft="20px"/>
+	</LinearLayout>
+<!-- ACCOUNTS -->
+  	<LinearLayout
+ 		android:orientation="horizontal"
+ 		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:paddingTop="5px"
+  		android:paddingBottom="5px">
+  		<TextView
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+  			android:text="Number of Accounts:"
+  			android:textStyle="bold"
+  			android:textSize="17dip"
+  			android:layout_marginLeft="5px"/>
+  		<TextView
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:id="@+id/NUMACCTS"
+  			android:textSize="18dip"
+  			android:layout_marginLeft="20px"/>
+  	</LinearLayout>
+  <!-- ACCOUNTS LIST -->
+  	<LinearLayout
+ 		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:paddingTop="5px"
+  		android:paddingBottom="5px">
+  		<ListView
+  			android:id="@android:id/list"
+  			android:layout_width="fill_parent"
+  			android:layout_height="125dip"
+  			android:layout_weight="1"/>
+  		<TextView 
+			android:id="@id/empty"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingTop="10dip"
+			android:text="There are currently no Accounts to display..." />
+  	</LinearLayout>
+<!-- CATEGORIES -->
+  	<LinearLayout
+ 		android:orientation="horizontal"
+ 		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:paddingBottom="5px"
+  		android:paddingTop="5px">
+  		<TextView
+  			android:text="Number of Categories:"
+  			android:textStyle="bold"
+  			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+  			android:textSize="17dip"
+  			android:layout_marginLeft="5px"/>
+  		<TextView
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:id="@+id/NUMCATS"
+  			android:textSize="18dip"
+  			android:layout_marginLeft="20px"/>
+  	</LinearLayout>
+  <!-- CATEGORIES LIST -->
+  	<LinearLayout
+  		android:orientation="vertical"
+ 		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:paddingBottom="5px"
+  		android:paddingTop="5px">
+  		<ListView
+  			android:id="@android:id/list"
+  			android:layout_width="fill_parent"
+  			android:layout_height="125dip"
+  			android:layout_weight="1"/>
+  		<TextView 
+			android:id="@id/empty"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingTop="10dip"
+			android:text="There are currently no Categories to display..." />
+  	</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

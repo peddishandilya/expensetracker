@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+   <Button
+	android:layout_width="fill_parent"
+	android:layout_height="85dip"
+	android:layout_marginTop="10dip"
+	android:id="@+id/stats_button"
+	android:text="Statistics"
+	android:textSize="16dip"
+	android:textStyle="bold"
+	android:paddingTop="10dip"	/>
+   <Button
+	android:layout_width="fill_parent"
+	android:layout_height="85dip"
+	android:id="@+id/manage_accounts"
+	android:text="Manage Accounts" 
+	android:textSize="16dip"
+	android:textStyle="bold"
+	android:paddingTop="10dip"	/>
+  <Button
+	android:layout_width="fill_parent"
+	android:layout_height="85dip"
+	android:id="@+id/manage_cats"
+	android:text="Manage Categories"
+	android:textSize="16dip"
+	android:textStyle="bold" 
+	android:paddingTop="10dip"	/>
+  <Button
+	android:layout_width="fill_parent"
+	android:layout_height="85dip"
+	android:id="@+id/tip_button"
+	android:text="Tip Calculator"
+	android:textSize="16dip"
+	android:textStyle="bold"
+	android:paddingTop="10dip"	/>
+</LinearLayout>
+</ScrollView>

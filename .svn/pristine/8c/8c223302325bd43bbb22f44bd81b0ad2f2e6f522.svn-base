@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+			<ScrollView 
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/tab2" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout 
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent" 
+					android:orientation="vertical"
+					android:padding="5dip" 
+					android:layout_weight="1">
+<!-- Edit Warning -->
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:paddingLeft="30dip" 
+						android:paddingRight="30dip" 
+						android:layout_height="fill_parent" 
+						android:orientation="horizontal" 
+						android:gravity = "center_horizontal"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/Warning"
+							android:text="You are Editing a Transaction" 
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent" 
+							android:gravity = "center_horizontal"
+							android:layout_weight="1" 
+							android:textColor = "#990000"
+							android:textStyle = "bold|italic"/>
+					</LinearLayout>
+<!-- INCOME/EXPENSE BUTTONS -->	
+					<LinearLayout 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent" 
+						android:layout_gravity="center_horizontal"
+						android:orientation="horizontal" 
+						android:layout_weight="1">
+						<Button 
+							android:id="@+id/incomeButton"
+							android:layout_width="fill_parent" 
+							android:layout_height="wrap_content"
+							android:text="Income" 
+							android:textSize="15dip"
+							android:layout_weight="1" />
+						<Button 
+							android:id="@+id/expenseButton"
+							android:layout_width="fill_parent" 
+							android:layout_height="wrap_content"
+							android:text="Expense" 
+							android:textSize="15dip"
+							android:layout_weight="1" />
+						<Button 
+							android:id="@+id/transferButton"
+							android:layout_width="fill_parent" 
+							android:layout_height="wrap_content"
+							android:text="Transfer" 
+							android:textSize="15dip"
+							android:layout_weight="1" />
+					</LinearLayout>
+<!-- AMOUNT TEXTFIELD / DATE PICKER -->
+					<LinearLayout 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent" 
+						android:orientation="horizontal"
+						android:layout_weight="1">
+						<TextView 
+							android:text="Amount:" 
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent" 
+							android:layout_weight="1" />
+						<TextView 
+							android:text="Date" 
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent" 
+							android:layout_weight="1" />
+					</LinearLayout>
+					<LinearLayout 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent" 
+						android:orientation="horizontal"
+						android:layout_weight="1">
+						<EditText 
+							android:id="@+id/entry1"
+							android:inputType="phone"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content" 
+							android:background="@android:drawable/editbox_background"
+							android:layout_weight="1" />
+						<Button 
+							android:id="@+id/pickDate" 
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content" 
+							android:text="Change the date"
+							android:layout_weight="1" />
+					</LinearLayout>
+<!-- PAYMENT TYPE_FROM SPINNER-->
+					<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+					<TextView 
+						android:id="@+id/txt_type_from" 
+						android:text="Payment From Account:"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						/>
+					<Spinner 
+						android:id="@+id/paytype_From" 
+						android:layout_width="250dip"
+						android:layout_height="wrap_content" 
+						android:drawSelectorOnTop="true"
+						android:prompt="@string/paytype_prompt" 
+						android:layout_weight="1" 
+						android:layout_below="@id/txt_type_from"
+						android:gravity="left"/>
+					<ImageView
+						android:id="@+id/add_from_account_button"
+						android:src="@drawable/add"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/paytype_From"
+						android:layout_below="@id/txt_type_from"
+						android:layout_marginTop="4dp"
+						android:layout_marginLeft="6dp"
+						android:clickable="true"/>
+					</RelativeLayout>
+<!-- PAYMENT TYPE_TO SPINNER-->
+					<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+					<TextView 
+						android:id="@+id/txt_type_to" 
+						android:text="Income To Account:"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:layout_weight="1" />
+					<Spinner 
+						android:id="@+id/paytype_To" 
+						android:layout_width="250dip"
+						android:layout_height="wrap_content" 
+						android:drawSelectorOnTop="true"
+						android:prompt="@string/paytype_prompt" 
+						android:layout_weight="1" 
+						android:layout_below="@id/txt_type_to"/>
+					<ImageView
+						android:id="@+id/add_to_account_button"
+						android:src="@drawable/add"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/paytype_To"
+						android:layout_below="@id/txt_type_to"
+						android:layout_marginTop="4dp"
+						android:layout_marginLeft="6dp"
+						android:clickable="true"/>
+					</RelativeLayout>
+<!-- CATEGORY SPINNER-->
+					<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+					<TextView 
+						android:id="@+id/txt_reason" 
+						android:text="Category:" 
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content" 
+						android:layout_weight="1" />
+					<Spinner 
+						android:id="@+id/reason1" 
+						android:layout_width="250dip"
+						android:layout_height="wrap_content" 
+						android:drawSelectorOnTop="true"
+						android:prompt="@string/reason_prompt" 
+						android:layout_weight="1" 
+						android:layout_below="@id/txt_reason"/>
+					<ImageView
+						android:id="@+id/add_category_button"
+						android:src="@drawable/add"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/reason1"
+						android:layout_below="@id/txt_reason"
+						android:layout_marginTop="4dp"
+						android:layout_marginLeft="6dp"
+						android:clickable="true"/>
+					</RelativeLayout>
+<!-- NOTE TEXTFIELD-->
+					<TextView 
+						android:text="Note:"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:layout_weight="1" />
+					<EditText 
+						android:id="@+id/notes" 
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content" 
+						android:background="@android:drawable/editbox_background"
+						android:layout_weight="1" />
+<!-- SAVE BUTTON -->
+					<LinearLayout 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent" 
+						android:orientation="vertical"
+						android:paddingLeft="50dip" 
+						android:paddingRight="50dip" 
+						android:layout_weight="1">
+						<LinearLayout 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent" 
+						android:orientation="horizontal" 
+						android:layout_weight="1">
+					<Button 
+						android:id="@+id/saveButton" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="Save"
+						android:layout_weight="1" />
+					<Button 
+						android:id="@+id/cancelButton" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="Cancel"
+						android:layout_weight="1" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>

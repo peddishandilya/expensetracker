@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" 
+		android:orientation="horizontal" 
+		android:padding="10sp">
+	<TextView 
+		android:id="@+id/transactionDateLabel" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="Date: " />
+	<TextView 
+		android:id="@+id/transactionDate" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_toRightOf="@id/transactionDateLabel" />
+	<TextView 
+		android:id="@+id/transactionTypeLabel" 
+		android:layout_below="@id/transactionDate" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="Type: " />
+	<TextView 
+		android:id="@+id/transactionType" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginLeft="10dip" 
+		android:layout_below="@id/transactionDate"
+		android:layout_toRightOf="@id/transactionTypeLabel" />
+	
+	<TextView 
+		android:id="@+id/transactionAmountLabel" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_marginLeft="10dip"
+		android:text="Amount: " 
+		android:layout_below="@id/transactionDate"
+		android:layout_toRightOf="@id/transactionType" />
+	<TextView 
+		android:id="@+id/transactionAmount" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_below="@id/transactionDate"
+		android:layout_toRightOf="@id/transactionAmountLabel" />
+	<TextView 
+		android:id="@+id/transactionCategoryLabel" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="Category: " 
+		android:layout_below="@id/transactionAmountLabel" />
+	<TextView 
+		android:id="@+id/transactionCategory" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/transactionAmountLabel" 
+		android:layout_toRightOf="@id/transactionCategoryLabel"
+		/>
+	<TextView 
+		android:id="@+id/transactionToAccountLabel" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="To Account: " 
+		android:layout_below="@id/transactionCategoryLabel" />
+	<TextView
+		android:id="@+id/transactionToAccount"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/transactionCategoryLabel"
+		android:layout_toRightOf="@id/transactionToAccountLabel" />
+	<TextView 
+		android:id="@+id/transactionFromAccountLabel" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="From Account: " 
+		android:layout_below="@id/transactionToAccountLabel" />
+	<TextView
+		android:id="@+id/transactionFromAccount"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/transactionToAccountLabel"
+		android:layout_toRightOf="@id/transactionFromAccountLabel" />
+	<TextView 
+		android:id="@+id/transactionNoteLabel" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="Note: " 
+		android:layout_below="@id/transactionFromAccountLabel" />
+	<TextView 
+		android:id="@+id/transactionNote" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_below="@id/transactionFromAccountLabel" 
+		android:layout_toRightOf="@id/transactionNoteLabel" />
+	<Button 
+		android:id="@+id/editTransactionBtn" 
+		android:layout_width="wrap_content"
+		android:layout_height="40sp" 
+		android:visibility="gone" 
+		android:text="Edit"
+		android:layout_below="@id/transactionNoteLabel"/>
+	<Button 
+		android:id="@+id/deleteTransactionBtn" 
+		android:layout_width="wrap_content"
+		android:layout_height="40sp" 
+		android:text="Delete" 
+		android:layout_below="@+id/transactionNoteLabel" 
+		android:visibility="gone" 
+		android:layout_toRightOf="@+id/editTransactionBtn" 
+		android:ellipsize="end"/>
+</RelativeLayout>

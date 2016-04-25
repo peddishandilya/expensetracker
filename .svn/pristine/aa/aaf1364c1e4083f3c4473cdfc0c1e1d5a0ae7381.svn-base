@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/backup"
+		android:icon="@drawable/backup"
+		android:title="Backup to SD"/>
+	<item android:id="@+id/import_file"
+		android:icon="@drawable/import_file"
+		android:title="Import from SD"/>
+	<item android:id="@+id/export"
+		android:icon="@drawable/export"
+		android:title="Export (HTML)"/>
+	<item android:id="@+id/help"
+    	android:icon="@drawable/help"
+        android:title="Help" />
+	<item android:id="@+id/info"
+    	android:icon="@drawable/info"
+        android:title="Information" />
+</menu>

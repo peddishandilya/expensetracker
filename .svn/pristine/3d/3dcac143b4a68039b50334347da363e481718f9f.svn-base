@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MintTrack</string>
+    <string name="empty"></string>
+    <string name="reason_prompt">Reason</string>
+    <string name="paytype_prompt">Payment Type</string>
+    <string name="catmgr_prompt">Select a Category</string>
+    <string name="catmgr_type_prompt">Select a Category Type</string>
+    <string-array name="cattype_array">
+    	<item>Income</item>
+    	<item>Expense</item>
+    </string-array>
+    <string name="acctmgr_prompt">Select an Account</string>
+</resources>
